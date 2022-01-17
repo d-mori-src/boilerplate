@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  font-weight: 300;
+  color: #333;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+/*# sourceMappingURL=style.css.map */
