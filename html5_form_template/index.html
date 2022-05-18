@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Template</title>
+    <meta name="description" content="This is description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="./meta/icon.png">
+    <link rel="shortcut icon" href="./meta/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/slidein.css">
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- header -->
+      </header>
+      <main class="page"><!-- $class = 例. top, anout, service, etc... -->
+        <ul class="formWrap">
+          <li class="form">
+            <div class="title">タイトル<span>必須</span></div>
+            <input type="text" class="input" name="title" placeholder="タイトルを入力" value="" />
+          </li>
+          <li class="form">
+            <div class="title">本文 <span>必須</span></div>
+            <textarea name="lead" class="input" placeholder="本文を入力"></textarea>
+          </li>
+          <li class="form">
+            <div class="title">チェックボックス<span>必須</span></div>
+            <ul class="box">
+                <li>
+                    <input type="checkbox" name="custom_checkbox_2[]" id="check_a" value="check_a" checked />
+                    <label for="check_a" class="customStyle">チェックボックスA</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="custom_checkbox_2[]" id="check_b" value="check_b" />
+                    <label for="check_b" class="customStyle">チェックボックスB</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="custom_checkbox_2[]" id="check_c" value="check_c" />
+                    <label for="check_c" class="customStyle">チェックボックスC</label>
+                </li>
+            </ul>
+          </li>
+          <li class="form">
+            <div class="title">ラジオボタン<span>必須</span></div>
+            <ul class="box">
+                <li>
+                    <input type="radio" name="custom_radio" id="radio_a" value="radio_a" checked />
+                    <label for="radio_a" class="customStyle">ラジオボタンA</label>
+                </li>
+                <li>
+                    <input type="radio" name="custom_radio" id="radio_b" value="radio_b" />
+                    <label for="radio_b" class="customStyle">ラジオボタンB</label>
+                </li>
+                <li>
+                    <input type="radio" name="custom_radio" id="radio_c" value="radio_c" />
+                    <label for="radio_c" class="customStyle">ラジオボタンC</label>
+                </li>
+            </ul>
+          </li>
+          <li class="form">
+            <div class="title">セレクトボックス<span>必須</span></div>
+            <div class="selectbox">
+                <select name="custom_select" id="select">
+                    <option value="select_a" selected>セレクトA</option>
+                    <option value="select_b">セレクトB</option>
+                    <option value="select_c">セレクトC</option>
+                </select>
+            </div>
+          </li>
+          <li class="form">
+            <div class="title">画像<span class="any">任意</span></div>
+            <label for="sample" class="imageBox">
+                ファイルアップロード
+                <input type="hidden" name="hoge_name" value="" />
+                <input type="file" name="hoge_thumbnail" accept="image/*" id="sample" />
+            </label>
+          </li>
+          <li class="form">
+            <div class="title">アップロードされた画像</div>
+            <div class="imageBox imageBox2">
+                <img class="thumbnailImage" src="./img/images.jpg" alt="アップロード画像">
+            </div>
+          </li>
+      </main>
+      <footer>
+        <!-- footer -->
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+// font @importはしない htmlのhead内で読み込み
+// |- font-family: 'Noto Sans JP', sans-serif; // 基本フォント
+// |- font-family: 'Josefin Sans', sans-serif; // Futuraに似たフォント
+// |- font-family: 'Poppins', sans-serif; // 英字ゴシック
+// |- font-family: 'EB Garamond', serif; // 英字明朝
+
+// 初期化
+*, h1, h2, h3, h4, h5, h6, p, a { font-family: 'Noto Sans JP', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: #454647; transition: .5s; &:hover { opacity: .7; } }
+ul li { list-style: none; letter-spacing: 1.5px; }
+::placeholder { color: #ccc; }
+img { vertical-align: bottom; }
+input { -webkit-appearance: none; border-radius: 0 } // safari(iPhone対策)
+body {
+    overflow-x: hidden;
+    color: #474645;
+    background: #fff;
+}
+// デバイスによって改行あり・なし切り替え
+.sp { display: block; }
+.pc { display: none; }
+@media screen and (min-width:768px) {
+    .sp { display: none; }
+    .pc { display: block; }
+}
